@@ -4,6 +4,7 @@
 /build
 .pnp.cjs
 .pnp.loader.mjs
+.yarn
 
 # Logs
 logs
