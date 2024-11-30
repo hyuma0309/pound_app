@@ -3,5 +3,5 @@
 ## pound_backend
 Nest.js
 
-## pound_backend
+## pound_front
 Next.js
