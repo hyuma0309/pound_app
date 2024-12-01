@@ -37,6 +37,15 @@ export default function Home() {
           </li>
         ))}
       </ul>
+      <div>
+      <button
+        onClick={() => {
+          throw new Error("Sentry テストエラー");
+        }}
+      >
+        エラーを発生させる
+      </button>
+    </div>
     </div>
   );
 }
