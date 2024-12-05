@@ -5,6 +5,7 @@ import { SentryGlobalFilter } from '@sentry/nestjs/setup';
 import { GraphQLModule } from '@nestjs/graphql';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { UsersModule } from './users/users.module';
+import { ChatWebSocketGateway } from './websocket/webSocketGateway';
 
 @Module({
   imports: [
@@ -20,7 +21,8 @@ import { UsersModule } from './users/users.module';
     {
       provide: APP_FILTER,
       useClass: SentryGlobalFilter,
-    }
+    },
+    ChatWebSocketGateway,
   ],
 })
 export class AppModule {}
