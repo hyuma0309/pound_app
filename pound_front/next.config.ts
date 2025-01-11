@@ -3,6 +3,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
+  output: 'export', 
+  images: {
+    unoptimized: true  // 静的エクスポート時に必要
+  }
 };
 
 export default withSentryConfig(nextConfig, {
