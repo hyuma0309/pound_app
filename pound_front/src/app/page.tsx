@@ -29,7 +29,7 @@ export default function Home() {
 
   return (
     <div>
-      <h1>User List</h1>
+      <h1>User List TEST</h1>
       <ul>
         {data?.users.map((user) => (
           <li key={user.id}>
